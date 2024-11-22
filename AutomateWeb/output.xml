@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-22T18:47:41.379463" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\MINT\Documents\Automate\Test.robot">
+<test id="s1-t1" name="TC-login remove cart" line="159">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-11-22T18:47:41.513975" elapsed="0.000147"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T18:47:41.514421" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-11-22T18:47:41.690587" level="WARN">The chromedriver version (130.0.6723.91) detected in PATH at C:\Webdriver\bin\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.86); currently, chromedriver 131.0.6778.85 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T18:47:41.514305" elapsed="2.468913"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=user-name</arg>
+<arg>1s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-22T18:47:43.983460" elapsed="2.012903"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T18:47:45.996714" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${locator_email}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T18:47:45.996556" elapsed="3.069433"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-22T18:47:49.066356" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${locator_password}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T18:47:49.066185" elapsed="3.059188"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-22T18:47:52.126156" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T18:47:52.125835" elapsed="2.051308"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-22T18:47:54.177456" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id=add-to-cart-sauce-labs-backpack</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T18:47:54.177341" elapsed="2.026177"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T18:47:57.204074" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T18:47:56.203778" elapsed="1.000371"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-22T18:47:57.204470" level="INFO">Clicking element 'id=remove-sauce-labs-backpack'.</msg>
+<arg>id=remove-sauce-labs-backpack</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-22T18:47:57.204343" elapsed="2.020024"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T18:47:59.224556" elapsed="3.086625"/>
+</kw>
+<status status="PASS" start="2024-11-22T18:47:41.513414" elapsed="20.798027"/>
+</test>
+<status status="PASS" start="2024-11-22T18:47:41.380220" elapsed="20.931861"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-22T18:47:41.690587" level="WARN">The chromedriver version (130.0.6723.91) detected in PATH at C:\Webdriver\bin\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.86); currently, chromedriver 131.0.6778.85 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

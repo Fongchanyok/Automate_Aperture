@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-01T12:39:44.165134" rpa="false" schemaversion="5">
+<suite id="s1" name="Automate" source="C:\Users\MINT\Documents\Automate">
+<suite id="s1-s1" name="Woskshop1" source="C:\Users\MINT\Documents\Automate\Woskshop1.robot">
+<test id="s1-s1-t1" name="TC_01 login" line="10">
+<status status="FAIL" start="2024-11-01T12:39:44.307272" elapsed="0.000487">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2024-11-01T12:39:44.186723" elapsed="0.121642"/>
+</suite>
+<status status="FAIL" start="2024-11-01T12:39:44.175026" elapsed="0.134085"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Automate">Automate</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Woskshop1">Automate.Woskshop1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
